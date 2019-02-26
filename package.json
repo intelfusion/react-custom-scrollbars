@@ -1,8 +1,8 @@
 {
   "name": "react-custom-scrollbars",
-  "version": "4.2.1",
+  "version": "4.2.2",
   "description": "React scrollbars component",
-  "main": "lib/index.js",
+  "main": "src/index.js",
   "scripts": {
     "clean": "rimraf lib dist",
     "build": "babel src --out-dir lib",
@@ -16,7 +16,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/malte-wessel/react-custom-scrollbars.git"
+    "url": "https://github.com/jordmccord/react-custom-scrollbars.git"
   },
   "keywords": [
     "scroll",
@@ -26,12 +26,12 @@
     "react",
     "custom"
   ],
-  "author": "Malte Wessel",
+  "author": "Jordan McCord",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/malte-wessel/react-custom-scrollbars/issues"
+    "url": "https://github.com/jordmccord/react-custom-scrollbars/issues"
   },
-  "homepage": "https://github.com/malte-wessel/react-custom-scrollbars",
+  "homepage": "https://github.com/jordmccord/react-custom-scrollbars",
   "devDependencies": {
     "babel-cli": "^6.2.0",
     "babel-core": "^6.2.1",
