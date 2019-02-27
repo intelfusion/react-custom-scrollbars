@@ -76,11 +76,10 @@ export default class Scrollbars extends Component {
     this.state = {
       didMountUniversal: false
     };
-
-    this.isMounted = true;
   }
 
   componentDidMount() {
+    this.isMounted = true;
     this.addListeners();
     this.update();
     this.componentDidMountUniversal();
