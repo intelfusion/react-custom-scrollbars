@@ -79,7 +79,7 @@ export default class Scrollbars extends Component {
   }
 
   componentDidMount() {
-    this.isMounted = true;
+    this._isMounted = true;
     this.addListeners();
     this.update();
     this.componentDidMountUniversal();
@@ -97,7 +97,7 @@ export default class Scrollbars extends Component {
   }
 
   componentWillUnmount() {
-    this.isMounted = false;
+    this._isMounted = false;
     this.removeListeners();
     caf(this.requestFrame);
     clearTimeout(this.hideTracksTimeout);
@@ -348,7 +348,7 @@ export default class Scrollbars extends Component {
   }
 
   handleWindowResize() {
-    if (!this.listeningToWindowResize || !this.isMounted) {
+    if (!this.listeningToWindowResize || !this._isMounted) {
       return;
     }
     this.update();
@@ -515,7 +515,7 @@ export default class Scrollbars extends Component {
 
   _update(callback) {
     const { onUpdate, hideTracksWhenNotNeeded } = this.props;
-    if (!this.isMounted) return;
+    if (!this._isMounted) return;
     const values = this.getValues();
     if (getScrollbarWidth()) {
       const { scrollLeft, clientWidth, scrollWidth } = values;
